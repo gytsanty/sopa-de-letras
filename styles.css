@@ -1,0 +1,72 @@
+body{
+    background-color: #753eeb;
+  }
+  
+  #wordSearchContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr); /* Ajusta según el tamaño deseado */
+      gap: 5px;
+      max-width: 500px; /* Ajusta según el tamaño deseado */
+      margin: 0 auto;
+  }
+  
+  #wordSearchContainer div {
+      width: 50px; /* Ajusta según el tamaño deseado */
+      height: 50px; /* Ajusta según el tamaño deseado */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(139, 85%, 45%);
+      cursor: pointer;
+  }
+  
+  #wordSearchContainer div.selected {
+      background-color: hsl(326, 71%, 65%);
+  }
+  .selected {
+      background-color: #e375d6; /* Un magenta claro para las letras seleccionadas */
+  }
+  
+  .found {
+      background-color: #ffcccb; /* Un rojo claro para las palabras encontradas */
+  }
+  .wordsList {
+      margin: 20px auto;
+      max-width: 90vw;
+      padding: 10px;
+      background-color: hwb(0 5% 95%);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .wordsList div {
+      padding: 8px 16px;
+      margin: 5px;
+      background-color: #60e890;
+      border-radius: 4px;
+      font-size: 16px;
+      text-align: center;
+  }
+  
+  .wordsList div.found::after {
+      content: ' ✔️'; /* Añade una palomita después del texto */
+      color: #0d0080; /* Color azul  para la palomita */
+  }
+  
+  /* Opcionalmente, puedes ajustar el estilo de la palabra encontrada para diferenciarla aún más */
+  .wordsList div.found {
+      background-color: #de874d; /* Naranja claro para indicar que la palabra ha sido encontrada */
+      text-decoration: none; /* Remueve el line-through si prefieres no tachar la palabra */
+  }
+
+  #generateNew {
+    padding: 15px 16px;
+    margin-left: 400px;
+    text-align: center;
+    background-color: aqua;
+  }
+
+  
